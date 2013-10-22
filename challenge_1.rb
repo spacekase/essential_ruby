@@ -17,4 +17,8 @@
 # Your code to define the method goes here.
 # =========================================
 
+def pmt(interest_rate, number_of_payments, present_value)
+
+puts "kasey"
+
 puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
