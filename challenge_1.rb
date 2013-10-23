@@ -21,7 +21,7 @@ puts "What is the monthly interest rate?"
 interest_rate = gets.chomp.to_f
 
 puts "What is the total number of monthly payments?"
-number_of_payments = gets.chomp.to_f
+number_of_payments = gets.chomp.to_i
 
 puts "What is the principal value?"
 principal_value = gets.chomp.to_f
