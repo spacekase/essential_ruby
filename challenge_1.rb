@@ -17,8 +17,21 @@
 # Your code to define the method goes here.
 # =========================================
 
-def pmt(interest_rate, number_of_payments, present_value)
+puts "What is the monthly interest rate?"
+interest_rate = gets.chomp.to_f
 
-puts "kasey"
+puts "What is the total number of monthly payments?"
+number_of_payments = gets.chomp.to_f
 
-puts "Your monthly payment will be #{pmt(0.01, 60, 30000)}."
+puts "What is the principal value?"
+principal_value = gets.chomp.to_f
+
+
+def pmt(interest_rate, number_of_payments, principal_value)
+	numerator = ((principal_value * ((1 + interest_rate)**number_of_payments))) 
+	denominator = (((1 + interest_rate)**number_of_payments) - 1)
+	return numerator / denominator / 100
+end
+
+
+puts "Your monthly payment will be #{pmt(interest_rate, number_of_payments, principal_value)}."
