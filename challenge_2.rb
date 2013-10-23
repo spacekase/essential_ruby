@@ -33,8 +33,7 @@ principal_value = gets.chomp.to_f
 
 # ====================
 loan_quotes.each do |quote_hash|
-	puts "If you are with " + quote_hash["bank"] + ", then your interest rate is " + quote_hash["interest_rate"].to_s + " and your monthly payment is " + "#{pmt(quote_hash["interest_rate"], number_of_payments, principal_value)}"
-	
+	puts "If you are with #{quote_hash["bank"]}, then your interest rate is #{quote_hash["interest_rate"]} and your monthly payment is #{pmt(quote_hash["interest_rate"], number_of_payments, principal_value)}."
 end
 
 
